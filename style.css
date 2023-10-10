@@ -93,6 +93,12 @@ nav .desktop__nav li a:hover {
   width: 20px;
   background-repeat: no-repeat;
 }
+.main_img {
+  background: url('image/iphone_11_pro_large.jpg');
+  height: 624px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Search Container */
 
 .search__container.hide {
@@ -140,68 +146,7 @@ nav .desktop__nav li a:hover {
   color: #fff;
   font-size: 17px;
 }
-/* bag */
-.bag__container.hide {
-  opacity: 0;
-  pointer-events: none;
-}
-.bag__container {
-  width: 60%;
-  margin: 0 auto;
-  padding: 0 40px;
-  position: relative;
-  z-index: 200;
-  position: fixed;
-  top: 70px;
-  left: 0;
-  right: 0;
-}
-.bag__container .bag__title {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333336;
-}
-.bag__links {
-  position: absolute;
-  font-size: 14px;
-  padding: 8px 16px;
-  top: 0;
-  right: 12px;
-  cursor: pointer;
 
-  font-weight: 600;
-  background: rgb(0, 113, 227);
-  border-radius: 980px;
-  color: #fff;
-}
-.bag__links:hover {
-  background: #0077ed;
-}
-.bag__product__div {
-  margin-top: 30px;
-}
-.bag__product__div > ul {
-  list-style: none;
-}
-.bag__product__div > ul > li > a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.bag__product__name {
-  font-size: 12px;
-  line-height: 1.2;
-  padding-left: 24px;
-  font-weight: 600;
-  max-width: 392px;
-  color: #333336;
-  opacity: 0.8;
-}
-.bag__product__name:hover {
-  opacity: 1;
-}
 /* Overlay */
 .overlay.show {
   position: fixed;
@@ -369,10 +314,93 @@ nav .desktop__nav li a:hover {
 .search__container .quick__links ul li:nth-of-type(5) {
   transition-delay: 200ms;
 }
+
+/* bag */
+.bag__container.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+.bag__container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 200;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+}
+.bag__container .bag__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333336;
+}
+.bag__links {
+  position: absolute;
+  font-size: 14px;
+  padding: 8px 16px;
+  top: 0;
+  right: 12px;
+  cursor: pointer;
+
+  font-weight: 600;
+  background: rgb(0, 113, 227);
+  border-radius: 980px;
+  color: #fff;
+}
+.bag__links:hover {
+  background: #0077ed;
+}
+.bag__product__div {
+  margin-top: 30px;
+}
+.bag__product__div > ul {
+  list-style: none;
+}
+.bag__product__div > ul > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.bag__product__name {
+  font-size: 12px;
+  line-height: 1.2;
+  padding-left: 24px;
+  font-weight: 600;
+  max-width: 392px;
+  color: #333336;
+  opacity: 0.8;
+}
+.bag__product__name:hover {
+  opacity: 1;
+}
 /* bag animation */
 .bag__container {
   opacity: 1;
   transform: translateX(0);
   transition: all 400ms ease;
   transition-delay: 300ms;
+}
+.main_sub_info {
+  height: 50px;
+  width: 100%;
+}
+.main_sub_info > div {
+  padding: 20px 10px;
+  margin: 0 auto;
+  width: 1000px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+/* main_info */
+.main__info {
+  position: relative;
+}
+.main_img_info > span {
+  color: white;
+  position: absolute;
 }
