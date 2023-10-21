@@ -78,7 +78,7 @@ nav .desktop__nav li a:hover {
   top: 20px;
   left: 10px;
   background-color: #fff;
-  padding: 1px 6px;
+  padding: 2px 6px;
   color: black;
   font-weight: 700;
   font-size: 5px;
@@ -385,17 +385,54 @@ nav .desktop__nav li a:hover {
   transition-delay: 300ms;
 }
 .main_sub_info {
+  position: relative;
   height: 50px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.main_sub_info > div {
-  padding: 20px 10px;
+.main_sub_info_container {
+  margin: 0 auto;
+  width: 1000px;
+  display: flex;
+  overflow: hidden;
+  transform: translateX(0);
+}
+.main_sub_content_div {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_left_arrow {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+.main_right_arrow {
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+.main_sub_info_div {
+  padding: 20px 0px;
   margin: 0 auto;
   width: 1000px;
   font-size: 14px;
   text-align: center;
   font-weight: 400;
 }
+
+.main_sub_info_div > span {
+  width: 1000px;
+}
+
+.main_sub_info_div > span > a {
+  text-decoration: none;
+  color: black;
+  font-size: 10px;
+}
+
 /* main_info */
 .main__info {
   position: relative;
