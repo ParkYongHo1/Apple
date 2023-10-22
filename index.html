@@ -85,44 +85,49 @@
       </div>
       <!-- nav 끝 -->
       <div class="main_sub_info">
-        <div class="main_left_arrow">
-          <i class="fa-solid fa-chevron-left" style="color: #a7a8aa"></i>
+        <div class="main_left_arrow" onclick="prevIcon()">
+          <i class="fa-solid fa-chevron-left" id="left_arrow"></i>
         </div>
-        <div class="main_sub_info_container"
-          style="margin: 0 auto; width: 1000px; display: flex; overflow: hidden"
-        >
-          <div class="main_sub_content_div">
-            <div class="main_sub_info_div" id="sub_main_content">
-              <span>
+        <div class="main_sub_info_container">
+          <div class="main_sub_content_div" id="sub_main_content">
+            <div class="main_sub_info_div">
+              <p>
                 iPhone 11 이상의 모델을 보상 판매하면 iPhone 15 또는 iPhone 15
-                Pro 구입 시 사용할 수 있는 ₩250,000-₩1,060,000 상당의 크레딧이.1
+                Pro 구입 시 사용할 수 있는 ₩250,000-₩1,060,000 상당의 크레딧이
                 <a href="#">iPhone 쇼핑하기</a>
-              </span>
+              </p>
+            </div>
+
+            <div class="main_sub_info_div">
+              <p>
+                신용카드 결제 시 최대 12개월 할부 적용 가능.
+                <a href="#"> 더 알아보기</a>
+              </p>
+            </div>
+            <div class="main_sub_info_div">
+              <p>
+                Apple Store를 방문하세요
+                <a href="#"> 가까운 매장 찾기</a>
+              </p>
             </div>
           </div>
-          <div class="main_sub_content_div">
-            <div class="main_sub_info_div" id="sub_main_content">
-              <span>
-                iPhone 11 이상의 모델을 보상 판매하면 iPhone 15 또는 iPhone 15
-                Pro 구입 시 사용할 수 있는 ₩250,000-₩1,060,000 상당의 크레딧이.1
-                <a href="#">iPhone 쇼핑하기</a>
-              </span>
-            </div>
-          </div>
         </div>
-        <div class="main_right_arrow">
-          <i class="fa-solid fa-chevron-right" style="color: #a7a8aa"></i>
-        </div>
-      </div>
-      <div class="main__info">
-        <div class="main_img"></div>
-        <div class="main_img_info">
-          <span>iPone 15 Pro</span>
+        <div class="main_right_arrow" onclick="nextIcon()">
+          <i class="fa-solid fa-chevron-right" id="right_arrow"></i>
         </div>
       </div>
     </div>
     <div class="overlay"></div>
-
+    <div class="main__info">
+      <div class="main_img"></div>
+      <div class="main_img_info">
+        <span>iPone 15 Pro</span>
+      </div>
+      <div class="main_img2"></div>
+      <div class="main_img_info">
+        <span>iPone 15 Pro</span>
+      </div>
+    </div>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

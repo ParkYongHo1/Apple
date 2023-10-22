@@ -5,7 +5,7 @@ const searchContainer = document.querySelector('.search__container');
 const overlay = document.querySelector('.overlay');
 const bagButton = document.querySelector('nav .desktop__nav .link__bag');
 const bagContainer = document.querySelector('.bag__container');
-const prevIcon = document.querySelector('.main_left_arrow');
+
 let isHidden = true;
 searchButton.addEventListener('click', () => {
   desktopNav.classList.add('hide');
@@ -33,8 +33,29 @@ overlay.addEventListener('click', () => {
   overlay.classList.remove('show');
 });
 
-prevIcon.addEventListener('click', () => {
-  document.getElementById('sub_main_content').style.transform = `translateX(${
-    direction * (100 / 2)
-  }%)`;
-});
+index = 0;
+function prevIcon() {
+  if (index === 0) {
+    document.getElementById('left_arrow').style.color = '#a7a8aa';
+    return;
+  } else {
+    this.index -= 1;
+    document.getElementById('left_arrow').style.color = 'black';
+    document.getElementById(
+      'sub_main_content'
+    ).style.transform = `translate3d(-${500 * this.index}px, 0, 0)`;
+  }
+}
+
+function nextIcon() {
+  if (this.index === 2) {
+    document.getElementById('right_arrow').style.color = '#a7a8aa';
+    return;
+  } else {
+    this.index += 1;
+    document.getElementById('right_arrow').style.color = 'black';
+    document.getElementById(
+      'sub_main_content'
+    ).style.transform = `translate3d(-${500 * this.index}px, 0, 0)`;
+  }
+}
